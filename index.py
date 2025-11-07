@@ -13,7 +13,7 @@ def convert_frame_to_ascii(frame, width=80):
     height = int(frame.shape[0] * width / frame.shape[1] / 2) 
     if height == 0:
         height = 1
-        
+         
     resized_frame = cv2.resize(frame, (width, height))
 
     if len(resized_frame.shape) > 2:
